@@ -53,7 +53,6 @@ test('test', async ({ page }) => {
   await page.waitForTimeout(1000);
   await page.locator("xpath=//select[@id='PaymentMethod']").selectOption({ index: 1 });
   await page.waitForTimeout(1000);
-  // await page.locator('#BankAccount').selectOption({ index: 1 });
   await page.locator("xpath=//select[@id='BankAccount']").selectOption({ index: 1 });
   await page.waitForTimeout(1000);
   const numberOperation = "1234"
